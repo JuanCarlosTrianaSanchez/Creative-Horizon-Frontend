@@ -2,16 +2,10 @@
 - General styles
 ==================== */
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  background-color: #9c7c45d5;
-}
-
 main {
+  background-color: #9c7c45d5;
   min-height: 80vh;
-  margin-top: 54px;
+  margin-top: 70px;
 }
 
 .section-text-combo {
@@ -32,13 +26,24 @@ main {
   - Hero section
   ==================== */
 
+/* Estilos para la sección #hero */
+/* Estilos para la sección #hero */
 #hero {
-  height: 350px;
+  /*  width: 1200px;
+  height: 750px; */
   background-image: url("../../../assets/images/FondoArte-1.webp");
   background-size: cover;
   background-position: center;
 }
-
+.container {
+  /*  display: flex; */
+}
+.video-container {
+  margin-top: 15px;
+  padding: 5px;
+  width: auto;
+  height: 300px;
+}
 /* ====================
   - Products Section
   ==================== */
