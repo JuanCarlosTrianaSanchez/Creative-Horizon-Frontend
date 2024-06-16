@@ -1,8 +1,8 @@
 /* Fondo café oscuro para el header */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
 .header-container .navbar {
   background-color: #3b372f !important; /* Color café oscuro */
 }
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
 
 /* Aplicar los estilos al título */
 .navbar-brand {

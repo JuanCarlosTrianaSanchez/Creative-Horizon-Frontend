@@ -6,14 +6,12 @@ import { FooterComponent } from '../footer/footer.component';
 
 
 @Component({
-  selector: 'app-home',
+  selector: 'app-products',
   standalone: true,
   imports: [CommonModule, HeaderComponent, FooterComponent],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+  templateUrl: './products.component.html',
+  styleUrl: './products.component.css'
 })
-export class HomeComponent {
+export class ProductsComponent {
 
 }
-
-
