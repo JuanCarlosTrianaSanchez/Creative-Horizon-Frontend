@@ -1,19 +1,16 @@
-/* Fondo café oscuro para el header */
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
 .header-container .navbar {
-  background-color: #3b372f !important; /* Color café oscuro */
+  background-color: #3b372f !important;
 }
 
-/* Aplicar los estilos al título */
 .navbar-brand {
-  font-family: "Playfair Display", serif; /* Fuente elegante */
-  color: #d4af37; /* Color dorado suave */
-  font-size: 3.5rem; /* Tamaño de la fuente */
-  font-weight: bold; /* Negrita para resaltar */
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Sombra sutil para hacer que el texto resalte */
+  font-family: "Playfair Display", serif;
+  color: #d4af37;
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
 
-/* Estilo de brillo para los enlaces de navegación */
 .header-container .nav-link {
   padding: 0.5rem 1rem;
   border: none;
@@ -21,26 +18,25 @@
   outline: none;
   font-size: 1rem;
   font-weight: 600;
-  background-color: #3b372f; /* Color de fondo similar a la barra de búsqueda */
-  color: #f0f0f0; /* Color de texto similar a la barra de búsqueda */
-  transition: background-color 0.3s, box-shadow 0.3s; /* Transición suave para el color de fondo y la sombra */
-  box-shadow: 0px 0px 60px #d4af37; /* Sombra para el efecto de brillo */
+  background-color: #3b372f;
+  color: #f0f0f0;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  box-shadow: 0px 0px 60px #d4af37;
   -webkit-box-reflect: below 10px
-    linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)); /* Reflejo para el brillo */
+    linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
 }
 
 .header-container .nav-link:hover {
-  background-color: #d4af37; /* Cambio de color de fondo al pasar el cursor */
-  color: #2e2b26; /* Cambio de color de texto al pasar el cursor */
+  background-color: #d4af37;
+  color: #2e2b26;
 }
 
 .header-container .nav-link:active,
 .header-container .nav-link:focus {
-  transform: scale(0.92); /* Efecto de escala al hacer clic o enfocar */
-  box-shadow: 0px 0px 80px #d4af37; /* Sombra más intensa al hacer clic o enfocar */
+  transform: scale(0.92);
+  box-shadow: 0px 0px 80px #d4af37;
 }
 
-/* Estilos para la barra de búsqueda */
 .header-container .search-bar {
   flex: 1;
   display: flex;

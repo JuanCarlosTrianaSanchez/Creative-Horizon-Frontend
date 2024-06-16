@@ -40,8 +40,8 @@ footer .copyright {
   color: #888;
 }
 li a img {
-  width: 20px; /* Ajusta el tamaño según tus necesidades */
+  width: 20px;
   height: auto;
-  vertical-align: middle; /* Para alinear verticalmente la imagen con el texto */
-  margin-right: 5px; /* Espacio entre la imagen y el texto */
+  vertical-align: middle;
+  margin-right: 5px;
 }
