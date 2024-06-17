@@ -1,9 +1,12 @@
-<app-header></app-header>
+<app-header (categorySelected)="filterProducts($event)"></app-header>
 <main>
   <section id="products" class="my-5 pt-5">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-sm-6 col-lg-3" *ngFor="let product of products">
+        <div
+          class="col-12 col-sm-6 col-lg-3"
+          *ngFor="let product of filteredProducts"
+        >
           <div class="product">
             <a [routerLink]="['/products', product.id]">
               <img [src]="product.image" alt="{{ product.name }}" />

@@ -1,4 +1,4 @@
-* {
+/* * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -8,7 +8,7 @@ main {
   min-height: 80vh;
   margin-top: 54px;
 }
-
+ */
 .section-text-combo {
   display: flex;
   flex-direction: column;
@@ -23,10 +23,6 @@ main {
   line-height: 1.2rem;
 }
 
-/* ====================
-    - Product Detail Section
-    ==================== */
-
 #product-detail .product-detail__image {
   width: 100%;
   max-height: 650px;
@@ -34,12 +30,8 @@ main {
   aspect-ratio: 1 / 1.1;
 }
 
-/* ====================
-    - Newsletter
-    ==================== */
-
-#newsletter h2 {
-}
+/* #newsletter h2 {
+} */
 #newsletter p {
   font-size: 0.9rem;
   line-height: 1.2rem;

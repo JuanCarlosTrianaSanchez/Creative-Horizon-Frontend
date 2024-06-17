@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
@@ -10,6 +10,8 @@ import { RouterModule } from '@angular/router';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
+  @Output() categorySelected = new EventEmitter<string>();
+
   navbarOpen = false;
   dropdownOpen = false;
 
@@ -20,5 +22,9 @@ export class HeaderComponent {
   toggleDropdown(event: Event) {
     event.preventDefault();
     this.dropdownOpen = !this.dropdownOpen;
+  }
+
+  filterProducts(category: string) {
+    this.categorySelected.emit(category);
   }
 }
