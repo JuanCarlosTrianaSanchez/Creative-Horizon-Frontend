@@ -24,7 +24,7 @@ export class LoginComponent {
   onSubmit(): void {
     if (this.loginForm.valid) {
       console.log(this.loginForm.value);
-      // Aquí puedes agregar la lógica para manejar el inicio de sesión del usuario
+      
     }
   }
 }

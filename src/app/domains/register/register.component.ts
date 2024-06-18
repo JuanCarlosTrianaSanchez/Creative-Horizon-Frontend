@@ -9,7 +9,7 @@ import { FooterComponent } from '../footer/footer.component';
   standalone: true,
   imports: [CommonModule, ReactiveFormsModule, HeaderComponent, FooterComponent],
   templateUrl: './register.component.html',
-  styleUrls: ['./register.component.css'] // Cambiado de styleUrl a styleUrls
+  styleUrls: ['./register.component.css'] 
 })
 export class RegisterComponent {
   registerForm: FormGroup;
@@ -26,7 +26,7 @@ export class RegisterComponent {
   onSubmit(): void {
     if (this.registerForm.valid) {
       console.log(this.registerForm.value);
-      // Aquí puedes agregar la lógica para manejar el registro del usuario
+     
     }
   }
 }

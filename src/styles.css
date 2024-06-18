@@ -14,7 +14,7 @@ body {
 main {
   flex: 1;
   margin-top: 120px;
-  margin-bottom: 250px; /* Ajusta según sea necesario */
+  margin-bottom: 250px;
 }
 
 * {

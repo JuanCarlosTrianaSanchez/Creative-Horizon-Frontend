@@ -1,8 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { HeaderComponent } from '../header/header.component';
 import { FooterComponent } from '../footer/footer.component';
+import { ProductService } from '../../services/product.service';
+import { Product } from '../../models/product.model';
 
 @Component({
   selector: 'app-products',
@@ -12,20 +14,27 @@ import { FooterComponent } from '../footer/footer.component';
   styleUrls: ['./products.component.css']
 })
 export class ProductsComponent implements OnInit {
-  products = [
-    { id: 1, name: 'Product 1', price: 60, image: 'https://htmldemo.net/flone/flone/assets/img/product/hm3-pro-2.jpg', category: 'Pinceles' },
-    { id: 2, name: 'Product 2', price: 70, image: 'https://htmldemo.net/flone/flone/assets/img/product/hm3-pro-2.jpg', category: 'Pinturas' },
-    { id: 3, name: 'Product 3', price: 80, image: 'https://htmldemo.net/flone/flone/assets/img/product/hm3-pro-2.jpg', category: 'Lienzos' },
-    { id: 4, name: 'Product 4', price: 90, image: 'https://htmldemo.net/flone/flone/assets/img/product/hm3-pro-2.jpg', category: 'Pinceles' }
-  ];
+  products  = signal([]);
+  filteredProducts = signal([]);
 
-  filteredProducts = this.products;
+  constructor(private productService: ProductService) {}
 
-  constructor() {}
-
-  ngOnInit(): void {}
-
-  filterProducts(category: string): void {
-    this.filteredProducts = category === 'All' ? this.products : this.products.filter(product => product.category === category);
+  ngOnInit(): void {
+    this.productService.getProducts().subscribe((data:any) => {
+      this.products.set(data);
+      this.filteredProducts.set(data);
+    });
   }
+
+ /*  filterProducts(category: string): void {
+    this.filteredProducts.update(
+      prevState => {
+        if (category === "All") {
+          return prevState
+      } else {
+          return prevState.filter(product => product.category.type === category)
+      }
+      }
+    )  
+  } */
 }
